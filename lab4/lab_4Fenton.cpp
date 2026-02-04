@@ -72,7 +72,26 @@ cout<< "Index for a =" <<index_a<<endl;
 //find the index for 'act'
 cout<<"Index for 'act'= " <<word.find("act")<<endl;
 
+//Exercise Homework 
 
+cout << "Enter a word";
+cin>> word;
+
+//Print second character 
+cout << "2nd charcter : " << word.at(1)<< endl;
+
+//Print length
+cout<< "Length: " << word.length() << endl;
+
+//Replace 2 characters starting from 3rd
+string replaced = word;
+replaced.replace (2,2, "---$---");
+cout<< "After replacement : "<< replaced << endl;
+
+//Remove last 3 characters 
+string shortened = word;
+shortened.erase(shortened.length() - 3, 3);
+cout<< "After removing last 3 chars :" << shortened << endl;
 
 
 return 0;
