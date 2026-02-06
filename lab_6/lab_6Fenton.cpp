@@ -81,5 +81,35 @@ else {
     // calculate the grade = final_exam"0.5+ lab "0.3 + homeowork" 0.2
     //multiway condition 
     //print result 
+      //LabExercise 
+double final_exams , labs , homework;
+//Input 
+cout<< "Enter final exam grade" ;
+cin >> final_exam;
+cout <<"Enter homeowrk grade:" ;
+cin>> homework;
+
+
+//calculate weighted grade 
+double grade = final_exam  *0.5 + labs * 0.3 + homework * 0.2;
+string gpa;
+
+//Branching
+if (grade>= 90 && grade <=100)
+gpa = "A";
+else if (grade >= 80)
+gpa = "B";
+else if (grade >= 70)
+gpa = "C";
+else if (grade>= 60)
+gpa = "D";
+else if (grade>=0)
+gpa = "F";
+else
+gpa = ""; 
+
+//Output 
+cout<< "A final grade of " << grade
+<<" is equivalent to a GPA of" << gpa << endl;
 return 0;
 }
