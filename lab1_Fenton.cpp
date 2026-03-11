@@ -4,9 +4,9 @@ February 1, 2026
 lab1, iostream
 */
 //header library 
+
 #include<iostream>
 using namespace std;
-
 
 // main function is the executable part of c++file
 int main() {
